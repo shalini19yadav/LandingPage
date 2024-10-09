@@ -1,0 +1,920 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* background-color: #fff; */
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            margin:0 30px ;
+            padding: 0 40px;
+        }
+        nav{
+            display: flex;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;    
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 10px gainsboro;
+            padding: 0 40px;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 40px;
+            display: inline-block;            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #000; 
+            font-weight: 700;    
+        }
+        nav ul li a:hover{
+            font-size: 1.1rem;
+            color: rgb(226, 21, 226); 
+            transition: 0.5s;    
+        }
+        nav ul li button{
+            padding: 10px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(170, 107, 228);
+            font-size: 1rem;
+        }
+        nav ul li button:hover{
+            background-color: #325c9e;
+            color: #000;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+        nav ul li button i{
+            font-size: 1rem;
+             margin-right: 10px;
+             color: black;
+        }
+        nav label{
+            margin:0 80px;
+            line-height: 70px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: black;
+        }
+
+        #checkbtn{
+            float: right;
+            line-height: 70px;
+            margin-right: 10px;
+            font-size: 35px;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+
+        .leftNav{
+            font-size: 1.1rem;
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+
+        .firsttSection{
+            display: flex;
+            justify-content: space-around;
+            background-color: #384355;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .leftSubSection{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            padding: 50px 10px;
+        }
+        .leftSubSection h1{
+            font-size: 3rem;
+            color: #fff;
+        }
+        .leftSubSection h4{
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        
+        .leftSubSection button{
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: transparent;  
+        }
+        
+
+        .leftSectionStores a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .leftSectionStores a i{
+            font-size: 1rem;
+            color: #000;
+        }
+
+        .rightSection img{
+            padding: 30px;   
+            height: 400px;         
+        }
+
+        
+        .secondSection{
+            max-width: 100vw;
+            /* background-color: violet; */
+            margin: 40px 0;
+            display: flex;
+            justify-content:start;
+            align-items: center;
+            height: 90vh;
+
+        }
+        
+
+        .About-Us{
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 25px;
+            padding: 10px 30px ;
+            height:84vh;
+        }
+        .About-Us h1{
+            width: 32vw;
+            font-family: 200;
+            font-size: 2.2rem;
+        }
+        .About-Us p{
+            width: 29vw;
+            font-size: 1rem;
+        }
+        .About-Us h4{
+            width: 30vw;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+
+       .aboutDiv{
+            margin-top: 10px;
+            color: #325c9e;
+            display: flex;
+            justify-content:start;
+            align-items: center;
+        }
+        .aboutDiv h3{
+            font-size: 1rem;
+        }
+        .aboutDiv .div{
+            height: 2px;
+            width: 5vw;
+            background-color: #325c9e;
+            
+        }
+
+        .secondRightSection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 22px;
+            padding: 20px 0 ;
+            /* background-color: red; */
+            width: 52vw;
+            height:90vh;
+        }
+
+        .yallaFeatures{
+            display: flex;
+            justify-content: space-between;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            /* margin-top: 15px; */
+            height: 20vh;
+        }
+
+        .yallaFeatures i{
+            color: #325c9e;
+            font-size: 1.8rem;
+        }
+        .yallaFeatures .divYalla{
+            height: 2px;
+            width: 20vw;
+            background-color: #000;
+        }
+         .Trustworthy{
+            width: 47vw;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin-left: 10px;
+            height: 10vh;
+        }
+
+        .Childimage{
+            background-image: url(child\ image.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            width: 100%;
+        }
+
+        .thirdSection{
+            height: 25vh;
+            /* background-color: aqua; */
+            display: flex;
+            /* justify-content: space-around; */
+            padding: 10px 25px;
+            align-items: center;
+        }
+
+        .ServiceDiv{
+            margin-top: 10px;
+            color: #325c9e;
+            display: flex;
+            justify-content:start;
+            gap: 5px;
+            align-items: center;
+        }
+        
+        .ServiceDiv .service{
+            height: 2px;
+            width: 5vw;
+            background-color: #325c9e;
+        }
+        .ServiceDiv h3{
+            font-size: 1rem;
+        }
+
+        .leftThird h2{
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            line-height: 1.7;
+            gap: 10px;
+            color: rgb(170, 107, 228);
+        }
+        .rightThird{
+            width: 44vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.01rem;
+        }
+        .rightThird hr{
+            border: 0;
+            background-color: #325c9e;
+            height: 2px;
+        }
+
+        .grid{
+            display: grid;
+            height: 90vh;
+            background-color: gainsboro;
+            padding-left: 15px;
+            padding-top: 25px;
+        }
+        .grid .iconsClass{
+            margin: 20px;
+        }
+
+    
+        .col i{
+            font-size: 1.8rem;
+            color: rgb(170, 107, 228);
+        }
+        .col h3{
+            font-size: 1rem;
+        }
+        .col p{
+            font-size: 0.8rem;
+            width: 22vw;
+        }
+        .col a i{
+            font-size: 1rem;
+            color: #000;
+        }
+        .col a{
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .iconsClass{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: start;
+            justify-content: center;
+
+        }
+        .GalaAppStyle{
+            height: 70vh;
+            width: 100%;
+            /* background-color: yellow; */
+            padding: 30px;
+        }
+        .ALlInOne{
+            height: 20vh;
+            display: flex;
+        }
+
+        .ALlInOne h2{
+            color: rgb(170, 107, 228);
+            width: 38vw;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            line-height: 1.7;
+        }
+
+     
+
+        .Phoneimage{
+            background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.4)), url(https://cdn.pixabay.com/photo/2016/11/29/12/30/phone-1869510_1280.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 50vh;
+            width: 88vw;
+        }
+
+
+        .frequently{
+            /* background-color: red; */
+            height: 60vh;
+
+            /* width: 100%; */
+        }
+       .answer h2{
+        /* padding: 20px 30px; */
+        width: 40vw;
+       }
+        .GetInTouch p{
+            width: 24vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1rem;
+        }
+        .GetInTouch hr{
+            width: 24vw;
+            border: 0;
+            background-color: blue;
+            height: 2px;
+        }
+        .AskAnything{
+            width: 100%;
+        }
+        .AskAnything h3{
+            font-size: 1.2rem;   
+        }
+        .AskAnything p{
+            font-size: 1rem;
+            width: 60vw;
+            padding: 15px;
+        }
+
+        .lastSecondDiv{
+            background-color: #333;
+            color: white;
+        }
+
+       .lastSecondDiv button{ 
+            padding: 10px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(170, 107, 228);
+            color: black;
+            font-size: 1rem;
+        }
+        .lastSecondDiv button i{
+            font-size: 1rem;
+             margin-right: 10px;
+             color: black;
+        }
+
+        .lastSecondDivLeft p{
+            width: 50vw;
+            font-size: 1rem;
+            font-weight: 200;
+        }
+
+
+        .lastDiv{
+            /* background-color: red; */
+            height: 70vh;
+            padding: 15px;
+            display: flex;
+
+        }
+        .lastDivImage{
+            background-image: url(https://cdn.pixabay.com/photo/2017/01/17/03/57/desktop-1985856_960_720.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+        }
+        .lastDivForm{
+            background-color: #EBF8FF;
+            color: #333;
+            padding-left: 30px;
+            height: 70vh;
+        }
+
+        .resourcesDiv{
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            height: 40vh;
+            align-items: center;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .item h3{
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        .item h5{
+            font-weight: 200;
+            font-size: 0.8rem;
+        }
+
+        
+.Future{
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.item2{
+    /* background-color: #17cad0; */
+    /* height: 50px; */
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.item3{
+    /* height: 80px; */
+    width: 100%;
+    /* background-color: #17cad0; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.item3 i{
+    font-size: 20px;
+    color: #ffffff;
+}
+.item4{
+    /* background-color: #17cad0; */
+    /* height: 50px; */
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+@media (max-width:478px){
+
+    nav label{
+        font-size: 15px;
+        margin: 0 2px;
+    }
+    #checkbtn{
+        font-size: 25px;
+    }
+    .rightSection img{
+        height: 500px;
+    }
+    
+    
+    .firsttSection{
+        margin: 0;
+        width: 100%;
+        background-color: #EBF8FF;
+    }
+    leftSubSection{
+        font-size: 0.6rem;
+        padding: 20px 20px;
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width:576px){
+    nav label{
+        font-size: 28px;
+        margin: 0 40px;
+    }
+
+    .firsttSection{
+        margin: 20px 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .leftSubSection{
+        font-size: 0.9rem;
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .rightSection img{
+        height: 350px;
+        padding: 40px 30px;
+    }
+    .thirdSection{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .ServiceDiv{
+        margin-top: 0; 
+    }
+    
+    .ServiceDiv h3{
+        font-size: 1rem;
+    }
+
+    .leftThird h2{
+        width: 60vw;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+    .rightThird{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7rem;
+    }
+    .rightThird hr{
+        border: 0;
+        background-color: #325c9e;
+        height: 1px;
+    }
+    .grid{
+        height: 90vh;
+        
+    }
+    .grid .iconsClass{
+        margin: 5px;
+    }
+    .col i{
+        font-size: 1.1rem;
+        color: rgb(170, 107, 228);
+    }
+    .col h3{
+        font-size: 0.8rem;
+    }
+    .col p{
+        font-size: 0.6rem;
+        width: 22vw;
+    }
+    .col a i{
+        font-size: 0.9rem;
+        color: #000;
+    }
+    .col a{
+        font-size: 0.8rem;
+    }
+
+    .GalaAppStyle{
+        height: 70vh;
+        width: 100%;
+        padding: 0;
+    }
+    .ALlInOne{
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ALlInOne h2{
+        color: rgb(170, 107, 228);
+        width: 90vw;
+        font-size: 0.7rem;
+    }
+    .Phoneimage{
+        height: 20vh;
+        width: 88vw;
+    }
+
+   
+
+    .secondRightSection{
+        width: 53vw;
+        height:45vh;
+    }
+    .About-Us{
+        /* background-color: red; */
+        padding: 10px 170px ;
+        height:90vh;
+        width: 82vw;
+    }
+    .About-Us h1{
+        width: 80vw;
+        font-family: 200;
+        font-size: 0.7rem;
+    }
+    .About-Us p{
+        font-size: 0.5rem;
+    }
+    .About-Us h4{
+        font-size: 0.5rem;
+    }
+    .yallaFeatures{
+        height: 20vh;
+    }
+
+    .yallaFeatures i{
+        color: #325c9e;
+        font-size: 1rem;
+    }
+    .yallaFeatures .divYalla{
+        height: 2px;
+        width: 20vw;
+    }
+     .Trustworthy div{
+        width: 75vw;
+        font-size: 0.6rem;
+        height: 10vh;
+    }
+
+}
+       
+        
+
+
+
+@media (max-width: 767px) {
+    nav label{
+        font-size: 28px;
+    }
+    #checkbtn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        transition: 1s;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        margin: 15px;
+    }
+    
+    .lastDiv{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .lastDivImage{
+        background-attachment: fixed;
+        height: 80%;
+    }
+    .lastDivForm{
+        /* padding-left: 10px; */
+        height: 100%;
+    }
+
+    .Future{
+        height: 20vh;
+    }
+    .item2{
+        font-size: 0.9rem;
+    }
+    
+    .item3 i{
+        font-size:0.8rem;
+    }
+    .item4{
+        font-size: 0.7rem;
+    }
+    .Phoneimage{
+        height:20vh;
+        width: 80vw;
+    }
+    
+    .secondRightSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 7px;
+        /* padding: 20px 0 ; */
+        width: 53vw;
+        height:45vh;
+    }
+    .About-Us{
+        /* background-color: gainsboro; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 170px ;
+        height:90vh;
+        width: 82vw;
+    }
+    .About-Us h1{
+        width: 70vw;
+        font-family: 200;
+        font-size: 1rem;
+    }
+    .About-Us p{
+        /* width: ; */
+        font-size: 0.7rem;
+    }
+    .About-Us h4{
+        /* width: 100%; */
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .Childimage{
+        background-attachment: fixed;
+        height: 80%;
+    }
+
+    .grid{
+        height: 90vh;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .grid .iconsClass{
+        margin: 10px;
+    }
+
+    .GalaAppStyle{
+        height: 70vh;
+        width: 100%;
+        padding: 10px;
+    }
+    .ALlInOne{
+        height: 20vh;
+    }
+
+    .ALlInOne h2{
+        color: rgb(170, 107, 228);
+        width: 42vw;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width:1200px){
+    nav{
+        padding: 20px 40px;
+    }
+
+    .leftSubSection{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        font-size: 0.7rem;
+        padding: 70px 20px;
+    }
+    .rightSection{
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width:992px){
+
+    nav{
+        padding: 35px 50px;
+    }
+    .firsttSection{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        background-color: #384355;
+        margin: 80px 0;
+        align-items: center;
+    }
+
+    .leftSubSection{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        font-size: 1rem;
+        padding: 20px 10px;
+    }
+    .rightSection{
+        padding: 10px 0;
+    }
+
+    .ALlInOne{
+        height: 30vh;
+    }
+
+    .ALlInOne h2{
+        color: rgb(170, 107, 228);
+        width: 35vw;
+        font-size: 1.2rem;
+    }
+
+   
+
+    .Phoneimage{
+        height: 40vh;
+        width: 88vw;
+    }
+    .secondSection{
+        max-width: 100vw;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+
+    }
+
+    
+    .secondRightSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        /* padding: 20px 0 ; */
+        width: 52vw;
+        height:45vh;
+    }
+    .About-Us{
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 100px ;
+        height:50vh;
+    }
+    .About-Us h1{
+        width: 67vw;
+        font-family: 200;
+        font-size: 1.4rem;
+    }
+    .About-Us p{
+        width: 50vw;
+        font-size: 0.9rem;
+    }
+    .About-Us h4{
+        width: 50vw;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+     
+
+    
+}
